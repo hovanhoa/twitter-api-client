@@ -11,7 +11,7 @@ scraper = Scraper(
     }
 )
 
-tweet_details = scraper.tweets_details([1793229355189190699])
+tweet_details = scraper.tweets_details([1793566675477872893])
 data = []
 
 for tweet in tweet_details:
@@ -41,3 +41,4 @@ for tweet in tweet_details:
 json_data = json.dumps(data, indent=4)
 
 print(json_data)
+print(len(data))
